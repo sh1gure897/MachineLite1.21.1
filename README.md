@@ -44,3 +44,7 @@ Unauthorized modification or sale is prohibited.
 ・自動名前のタグ  
 ・簡単を自動化  
 ・スパムに抵抗  
+
+---
+# Reason for making it
+blackoutやRusherhackとかと併合して使いたかったので作りました
