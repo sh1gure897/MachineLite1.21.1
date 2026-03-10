@@ -1,0 +1,19 @@
+package com.lite.machinelite.mixin.client;
+
+import com.lite.machinelite.event.impl.EventBreakBlock;
+import com.lite.machinelite.utilities.IMC;
+import net.minecraft.client.network.ClientPlayerInteractionManager;
+import net.minecraft.util.math.BlockPos;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+@Mixin(ClientPlayerInteractionManager.class)
+public class MixinPlayerControllerMP {
+    @Inject(method = "breakBlock", at = @At("RETURN"))
+    public void onPlayerDestroyBlock(BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
+        EventBreakBlock eventBreakBlock = new EventBreakBlock();
+        eventBreakBlock.fire(pos, IMC.mc.world.getBlockState(pos)).call();
+    }
+}
