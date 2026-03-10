@@ -44,3 +44,5 @@ Unauthorized modification or sale is prohibited.
 ・自動名前のタグ  
 ・簡単を自動化  
 ・スパムに抵抗  
+---
+#大体の機能は完成しました。ただantispamとantighostblockがややゴミ仕様、プルリク/Issuesが来たら対応
