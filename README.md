@@ -46,3 +46,5 @@ Unauthorized modification or sale is prohibited.
 ・スパムに抵抗  
 ---
 #大体の機能は完成しました。ただantispamとantighostblockがややゴミ仕様、プルリク/Issuesが来たら対応
+
+### 検証環境 mcver-1.21.1 fabric-0.16.5 使用クライアントRusher hack,Futuer,meteor(+blackout) 使用mod/FabricAPI,sodium,Lithium
