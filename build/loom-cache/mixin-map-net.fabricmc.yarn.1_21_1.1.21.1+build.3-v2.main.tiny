@@ -1,0 +1,5 @@
+v1	named	intermediary
+FIELD	com/lite/machinelite/mixin/client/MixinGuiEditSign	Lnet/minecraft/block/entity/SignBlockEntity;	blockEntity	field_40424
+FIELD	com/lite/machinelite/mixin/client/MixinGuiEditSign	Z	front	field_43363
+FIELD	com/lite/machinelite/mixin/client/MixinGuiEditSign	[Ljava/lang/String;	messages	field_40425
+FIELD	com/lite/machinelite/mixin/client/MixinGuiNewChat	Ljava/util/List;	visibleMessages	field_2064
